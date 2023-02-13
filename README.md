@@ -4,6 +4,7 @@ To Deploy the Kubernetes Dashboard in docker desktop for windows follw the below
 2. Execute this command either in Bash/Powershell/CMD
 kubectl apply -f recommended.yaml
 3. If you want to bypass the login page add this command  - --enable-skip-login in the below
+
 spec:
       containers:
         - name: kubernetes-dashboard
