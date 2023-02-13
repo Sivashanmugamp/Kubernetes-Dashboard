@@ -5,16 +5,20 @@ To Deploy the Kubernetes Dashboard in docker desktop for windows follw the below
 kubectl apply -f recommended.yaml
 3. If you want to bypass the login page add this command  - --enable-skip-login in the below
 
-spec:
-      containers:
-        - name: kubernetes-dashboard
-          image: kubernetesui/dashboard:v2.2.0
-          imagePullPolicy: Always
-          ports:
-            - containerPort: 8443
-              protocol: TCP
-          args:
-            - --auto-generate-certificates
-            - --namespace=kubernetes-dashboard
-             - --enable-skip-login              #add this command
-            # Uncomment the following line to manually specify Kubernetes API server Host
+![image](https://user-images.githubusercontent.com/93910728/218376977-c5fca10e-1fe7-4302-b974-4fe772196170.png)
+
+
+4. To Launch the dashboared use the below command
+5. kubectl proxy
+6. Then launch this URL http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/error?namespace=default
+
+WITH SAMPLE USER
+1. We need Service account and cluster role binding
+2. Download the serviceaccount.yml and clusterrolebinding.yml files and execute using below command"
+'''yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+    name: admin-user
+    namespace: kubernetes-dashboard
+```
