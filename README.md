@@ -15,10 +15,3 @@ kubectl apply -f recommended.yaml
 WITH SAMPLE USER
 1. We need Service account and cluster role binding
 2. Download the serviceaccount.yml and clusterrolebinding.yml files and execute using below command"
-'''yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-    name: admin-user
-    namespace: kubernetes-dashboard
-```
