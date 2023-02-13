@@ -14,4 +14,12 @@ kubectl apply -f recommended.yaml
 
 WITH SAMPLE USER
 1. We need Service account and cluster role binding
-2. Download the serviceaccount.yml and clusterrolebinding.yml files and execute using below command"
+2. Download the dashboard-adminuser.yaml file and execute using below command
+
+##### kubectl apply -f dashboard-adminuser.yaml
+
+And then execute the below command to get the token
+
+##### kubectl -n kubernetes-dashboard create token admin-user
+
+3. Use the generated token to access the dashboard
