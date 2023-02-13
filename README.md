@@ -24,5 +24,5 @@ And then execute the below command to get the token
 
 3. Use the generated token to access the dashboard.
 4. For more details refer the below url https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
-5.Somw useful Docker Terminology
+5. Some useful Docker Terminology
 https://learn.microsoft.com/en-us/dotnet/architecture/microservices/container-docker-introduction/docker-terminology
