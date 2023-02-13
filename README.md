@@ -22,6 +22,5 @@ And then execute the below command to get the token
 
 ##### kubectl -n kubernetes-dashboard create token admin-user
 
-3. Use the generated token to access the dashboard
-For more details refer the below url
-https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+3. Use the generated token to access the dashboard.
+4. For more details refer the below url https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
