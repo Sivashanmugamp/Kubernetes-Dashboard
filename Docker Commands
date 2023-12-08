@@ -1,5 +1,0 @@
-# Below are some docker commands
-
-1. To list out all RUNNING docker images use the below command
-    - docker ps
-2. To list out the 
