@@ -31,6 +31,25 @@
 6. Push an Image to Docker Hub
     - Uploads a local image to Docker Hub __docker push <image_name>:<tag>__
 
+## 3. Below are commands will help to remove a application from docker container.
+Here I have used coco annotator removal process. When you want to remove the other application the steps are remain same.
+
+1. Navigate to the application folder
+         __cd /path/to/coco-annotator__
+2. Stop and Remove Docker Containers
+    __docker-compose down__
+3. Remove Docker Images
+    __docker-compose rm__
+4. Delete the Coco Annotator Directory
+    __rm -rf /path/to/coco-annotator__
+5. Optional: Remove Docker Network and Volumes
+    __docker network prune__
+    __docker volume prune__
+
+
+
+
+
 
 
 
