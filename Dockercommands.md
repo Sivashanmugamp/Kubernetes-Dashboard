@@ -30,9 +30,10 @@
     - Tags an existing image with a new name __docker tag <source_image> <target_image>__
 6. Push an Image to Docker Hub
     - Uploads a local image to Docker Hub __docker push <image_name>:<tag>__
+7. Use this command to log into the docker hub __docker login__
 
-## 3. Below are commands will help to remove a application from docker container.
-Here I have used coco annotator removal process. When you want to remove the other application the steps are remain same.
+## 3. Below are commands that will help to remove an application from the docker container.
+Here I have used the coco annotator removal process. When you want to remove the other application the steps remain same.
 
 1. Navigate to the application folder
          __cd /path/to/coco-annotator__
