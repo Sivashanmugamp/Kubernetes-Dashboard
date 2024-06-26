@@ -45,6 +45,11 @@ Here I have used coco annotator removal process. When you want to remove the oth
 5. Optional: Remove Docker Network and Volumes
     __docker network prune__
     __docker volume prune__
+## 4. Managing Volume
+1. List out the volumes
+     - docker volume ls
+2.  To list all volumes that are using the local driver
+     - docker volume ls -f driver=local
 
 
 
