@@ -4,7 +4,13 @@
   --> docker build -t <your-image-name>:v1  -f <your-project-name>/Dockerfile . 
         -- image name would be any name which you want to create.
         --> For Ex: docker build -t containerapp:v1 -f ContainerApp/Dockerfile .
+  --> docker build -t your_dockerhub_username/your_image_name:tag .
 3. To run the docker image
   --> docker run -it --rm -p 8080:80 containerapp:v1
 
-
+4. List out all containers
+   - docker ps 
+5. In case you want to push your images to Docker Hub use the below commands
+    - docker login
+6. After Login to push your image to the Docker hub
+    - docekr push your_dockerhub_username/your_image_name:tag
