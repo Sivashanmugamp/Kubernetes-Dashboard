@@ -14,3 +14,26 @@
     - docker login
 6. After Login to push your image to the Docker hub
     - docekr push your_dockerhub_username/your_image_name:tag
+7. To see the logs
+    - docker logs <container_id>
+
+One of my customer applications uses the below tech stacks
+  1. .Net Core WebAPI
+  2. Angular 16 with Material Design
+  3. MySQL 8.21
+  4. Python FastAPI
+I have followed the below steps to Contaninerise the Applications
+1. .Net API.
+  --> Added docker file inside the startup project(API Project) folder, then moved this file just one step back to the current folder
+  --> used this command to build the app
+        - docker build -t cannonballwebapi .
+  --> used this command to run the image in a container
+        - docker run -e"ASPNETCORE_ENVIRONMENT=Development" -p 5001:80 cannonballwebapi
+2. Angular App
+  --> Added docker file and .dockerignore file
+  --> docker build -t cannonballui .
+3. MySQL
+4. Python FastAPI
+5. .Net background service
+
+  
